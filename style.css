@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+.movie{
+    color: white;
+    position: absolute;
+    top: 28px;
+}
+.heading .n{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: orange;
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+.heading .n ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.heading .n ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1;
+}
+.heading .n ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    display: block;
+    transition: 0.2s linear;
+}
+.heading .n ul li a:hover::after{
+    width: 100%;
+}
+.heading .n ul li a:hover{
+    color: red;
+}
